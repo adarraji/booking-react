@@ -75,3 +75,5 @@ React
 CSS
 HTML
 fontawesome.com
+react-date-range
+format-fns
