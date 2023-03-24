@@ -90,6 +90,7 @@ const Hotel = () => {
                 <MailList />
                 <Footer />
             </div>
+
         </div>
     )
 }
