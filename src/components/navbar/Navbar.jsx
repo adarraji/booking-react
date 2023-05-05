@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navContainer">
-                <Link to="/" style={{ color: "inherit" }}>
+                <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
                     <span className="logo">AD Booking</span>
                 </Link>
                 <div className="navItems">
