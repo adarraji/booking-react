@@ -22,6 +22,7 @@ To run the application
 * React Router
 * React Hooks
 * Font Awesome
+* Custom hooks
 
 
 ## Environmental Variables
