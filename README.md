@@ -23,6 +23,7 @@ To run the application
 * React Hooks
 * Font Awesome
 * Custom hooks
+* React Context
 
 
 ## Environmental Variables
