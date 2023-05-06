@@ -14,7 +14,7 @@ import { SearchContext } from "../../context/SearchContext";
 const Header = ({ type }) => {
     const navigate = useNavigate();
     const [openDate, setOpenDate] = useState(false)
-    const [date, setDate] = useState([
+    const [dates, setDate] = useState([
         {
             startDate: new Date(),
             endDate: new Date(),
@@ -41,7 +41,8 @@ const Header = ({ type }) => {
     const { dispatch } = useContext(SearchContext);
 
     const handleSearch = () => {
-        navigate("/hotels", { state: { destination, date, options } });
+        dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
+        navigate("/hotels", { state: { destination, dates, options } });
     }
 
     return (
@@ -85,12 +86,12 @@ const Header = ({ type }) => {
                             </div>
                             <div className="headerSearchItem">
                                 <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-                                <span onClick={() => setOpenDate(!openDate)} className="headerSearchText">{`${format(date[0].startDate, "MM/dd/yy")} to ${format(date[0].endDate, "MM/dd/yy")}`}</span>
+                                <span onClick={() => setOpenDate(!openDate)} className="headerSearchText">{`${format(dates[0].startDate, "MM/dd/yy")} to ${format(dates[0].endDate, "MM/dd/yy")}`}</span>
                                 {openDate && <DateRange
                                     editableDateInputs={true}
                                     onChange={item => setDate([item.selection])}
                                     moveRangeOnFirstSelection={false}
-                                    ranges={date}
+                                    ranges={dates}
                                     minDate={new Date()}
                                     className="date"
                                 />}
