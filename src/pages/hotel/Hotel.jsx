@@ -45,7 +45,7 @@ const Hotel = () => {
     //     },
     // ];
 
-    const { dates } = useContext(SearchContext)
+    const { dates, options } = useContext(SearchContext)
 
 
     const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -136,7 +136,7 @@ const Hotel = () => {
                                 excellent location score of 9.8!
                             </span>
                             <h2>
-                                <b>$945</b> ({days} nights)
+                                <b>${days * data.cheapestPrice * options.rooms}</b> ({days} nights)
                             </h2>
                             <button>Reserve or Book Now!</button>
                         </div>
