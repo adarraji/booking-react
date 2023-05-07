@@ -10,7 +10,7 @@ const Login = () => {
         password: undefined,
     });
 
-    const { loading, error, dispatch } = useContext(AuthContext);
+    const { user, loading, error, dispatch } = useContext(AuthContext);
 
     const navigate = useNavigate()
 
@@ -30,7 +30,7 @@ const Login = () => {
         }
     };
 
-
+    console.log(user)
     return (
         <div className="login">
             <div className="lContainer">
