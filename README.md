@@ -3,7 +3,7 @@
 Booking front-end app using React. The home page has lists and search bar (destination, date range and other options). When you click the search button, the result page shows up and you can change search inputs or add other options. When you choose any hotel it will take you to the single hotel page where you can see it's details including the photo gallery of the hotel.
 
 
-You can see the website [here]()
+You can see the website [here](https://react-booking-12.netlify.app/)
 
 
 This is one of three parts of full stack Booking app. You can find the Node.js/MongoDB REST API backend [here](https://github.com/adarraji/booking-node-api) and the React Booking Admin Dashboard [here](https://github.com/adarraji/booking-admin)
@@ -43,7 +43,7 @@ Example: `http://localhost:8800/api`
 ## Deployment
 
 Deployed on [Netlify](https://netlify.com)
-You can see the website [here]()
+You can see the website [here](https://react-booking-12.netlify.app/)
 
 
 ## Authors
@@ -52,6 +52,6 @@ You can see the website [here]()
 
 
 ## Deploy status
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d760479-08e8-4e3c-9463-0d5129f2f718/deploy-status)](https://app.netlify.com/sites/react-booking-12/deploys)
 
 ## Screenshots
