@@ -2,7 +2,7 @@ import "./featured.css"
 import useFetch from "../../hooks/useFetch"
 
 const Featured = () => {
-    const { data, loading, error } = useFetch("/hotels/CountByCity?cities=berlin,madrid,london")
+    const { data, loading } = useFetch("/hotels/CountByCity?cities=berlin,madrid,london")
     return (
         <div className="featured">
             {loading ? "Loading please wait" : <>
