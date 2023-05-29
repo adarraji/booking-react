@@ -31,11 +31,14 @@ To run the application
 
 ## Environmental Variables
 
-Add backend api url in `package.json`. 
+Add backend api base url `process.env.REACT_APP_BACKEND_BASE_URL` in:
 
-Example:
-`"proxy": "http://localhost:8800/api"`
+* `src\components\reserve\Reserve.jsx`
+* `src\hooks\useFetch.js`
+* `src\pages\login\Login.jsx`
 
+
+Example: `http://localhost:8800/api`
 
 ## Deployment
 
