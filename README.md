@@ -31,7 +31,7 @@ To run the application
 
 ## Environmental Variables
 
-Add backend api base url `process.env.REACT_APP_BACKEND_BASE_URL` in:
+Replace `process.env.REACT_APP_BACKEND_BASE_URL` with the backend api base url in:
 
 * `src\components\reserve\Reserve.jsx`
 * `src\hooks\useFetch.js`
